@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#score {
+    text-align: center;
+}
+
+#game {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 1rem;
+    background-image: url('https://media.istockphoto.com/vectors/fantastic-landscape-game-background-surface-vector-id1144759120?k=20&m=1144759120&s=170667a&w=0&h=JvI-HUyPyvxG9SmT34KCeC0LM9VsjUJOQCQ2rzetiZ8=');
+    background-size: cover;
+    opacity: 0.75;
+}
+
+#snorlax {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 225px; /* Subtract height of game from dino height */
+    background-image: url('Snorlax.png');
+    background-size: cover;
+}
+
+#blast {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 140px; /* Relative to Snorlax */
+    left: 500px; /* Width of game - rock */
+    background-image: url('Blast.png');
+    background-size: cover;
+    animation: blast 1s infinite linear;
+}
+
+@keyframes blast {
+    0% {left: 500px;}
+    100% {left: -50px}
+}
+
+/* Only when attached to dino div */
+.jump-animate {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0% {top: 225px;}
+    50% {top: 75px;} /* Hang and pause for a little */
+    75% {top: 75px;} /* Hang and pause for a little */
+    100% {top: 225px;}
+}

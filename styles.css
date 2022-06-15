@@ -1,0 +1,365 @@
+/* Variables */
+:root {
+    --radius: 0.15rem;
+    --padding: 1rem;
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: yellow;
+}
+
+/* For Firefox Users*/
+::-moz-selection {
+    background: yellow;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding-bottom: .25rem;
+    border-bottom: 3px solid transparent;
+    color: grey;
+    font-family: Times, serif;
+    font-style: italic;
+}
+
+@media (max-width: 729px) {
+    .nav-item a {
+        display: none;
+    }
+}
+
+@media (max-height: 500px) {
+    .nav-item a {
+        display: none;
+    }
+}
+
+.nav-item p {
+    font-family: Times, serif;
+    font-style: italic;
+    color: grey;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+.nav-item a:hover {
+    border-color: green;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    padding: 0.75rem;
+}
+
+.container {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(27, 350px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    height: 100vh;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+@media (max-width: 729px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(54, auto);
+        width: auto;
+    }
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+@media (min-width: 730px) {
+    .container p{
+        width: auto;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .container p {
+        width: auto;
+        height: 100vh;
+    }
+}
+
+#content1 {
+    background: #C6C9D0;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content2 {
+    background: #E5B3BB;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content3 {
+    background: #B8E0F6;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content4 {
+    background: #F7CE76;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content5 {
+    background: #8DA47E;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content6 {
+    background: #B8A390;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content7 {
+    background: #BFA2DB;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content8 {
+    background: #E08F62;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content9 {
+    background: #C6D57E;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content10 {
+    background: #84A1BE;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content11 {
+    background: #FFE8CF;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content12 {
+    background: #9A9B94;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content13 {
+    background: #FFFFC2;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content14 {
+    background: #A7E9AF;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content15 {
+    background: #4797B1;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content16 {
+    background: #E78775;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content17 {
+    background: #DFD3C3;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+#content18 {
+    background: #F6E5F5;
+    border-radius: var(--radius);
+    padding: var(--padding);
+}
+
+/* State Flags that do not conform to full standard*/
+.rhodeIsland img {
+    width: 175px;
+    height: 150px;
+}
+
+.westVirginia img {
+    width: 250px;
+    height: 125px;
+}
+
+.kentucky img {
+    width: 250px;
+    height: 125px;
+}
+
+.nebraska img {
+    width: 250px;
+    height: 135px;
+}
+
+.illinois img {
+    width: 250px;
+    height: 135px;
+}
+
+.northCarolina img {
+    width: 250px;
+    height: 145px;
+}
+
+.wisconsin img {
+    width: 250px;
+    height: 145px;
+}
+
+.northDakota img {
+    width: 230px;
+    height: 150px;
+}
+
+.utah img {
+    width: 250px;
+    height: 140px;
+}
+
+.minnesota img {
+    width: 250px;
+    height: 140px;
+}
+
+.florida img {
+    width: 250px;
+    height: 145px;
+}
+
+.montana img {
+    width: 250px;
+    height: 145px;
+}
+
+.southDakota img {
+    width: 250px;
+    height: 140px;
+}
+
+.idaho img {
+    width: 220px;
+    height: 150px;
+}
+
+.pennsylvania img {
+    width: 250px;
+    height: 145px;
+}
+
+.arizona img {
+    width: 250px;
+    height: 145px;
+}
+
+.colorado img {
+    width: 250px;
+    height: 145px;
+}
+
+.nevada img {
+    width: 250px;
+    height: 145px;
+}
+
+.delaware img {
+    width: 250px;
+    height: 145px;
+}
+
+.newHampshire img {
+    width: 250px;
+    height: 145px;
+}
+
+.washington img {
+    width: 250px;
+    height: 135px;
+}
+
+.maine img {
+    width: 220px;
+    height: 150px;
+}
+
+.newJersey img {
+    width: 250px;
+    height: 135px;
+}
+
+/* Reference & Footer */
+.ref p {
+    text-align: center;
+    font-style: italic;
+}
+
+.footer p {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 361px) {
+    .ref p,
+    .footer p {
+        font-size: 13px;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .ref p,
+    .footer p {
+        font-size: 14px;
+    }
+}
